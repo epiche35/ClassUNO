@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
 
-// Import logo and set it as the browser favicon dynamically
+// Dynamically import logo and set it as the browser tab favicon
 import logoUrl from './assets/images/logo.png';
 
 const link = document.querySelector("link[rel*='icon']") || document.createElement('link');
