@@ -37,16 +37,14 @@ export const Navbar: React.FC<NavbarProps> = ({
           onClick={onNavigateHome}
           className="flex items-center gap-2 group text-left cursor-pointer focus:outline-none"
         >
-          <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-rose-500 to-amber-500 flex items-center justify-center text-white font-display font-black text-sm shadow-md group-hover:scale-105 transition-transform">
-            U
-          </div>
+          <img src="/logo.png" alt="classUNO Logo" className="w-8 h-8 rounded-xl object-contain" />
           <span className="font-display font-black text-xl tracking-tight text-white group-hover:text-rose-400 transition-colors">
             classUNO
           </span>
         </button>
 
         {/* Zone 2: 4 Clean Text Navigation Links */}
-        <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-400">
+        <nav className="hidden md:flex items-center gap-6 font-medium text-sm text-slate-300">
           <button
             onClick={onNavigateHome}
             className="hover:text-white transition-colors cursor-pointer"
@@ -88,7 +86,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           {!inGame && (
             <button
               onClick={onOpenCreate}
-              className="py-2 px-4 rounded-xl bg-gradient-to-r from-rose-500 to-amber-500 hover:from-rose-600 hover:to-amber-600 text-white font-display font-bold text-xs shadow-lg shadow-rose-500/20 transition-all flex items-center gap-1.5 cursor-pointer whitespace-nowrap shrink-0"
+              className="py-2 px-4 rounded-xl bg-gradient-to-tr from-rose-500 to-amber-500 hover:from-rose-600 hover:to-amber-600 text-white font-display font-bold text-sm flex items-center gap-2 shadow-lg shadow-rose-500/20 transition-all cursor-pointer"
             >
               <Plus className="w-4 h-4" />
               <span>Create Room</span>
