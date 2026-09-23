@@ -1,0 +1,6 @@
+{
+  "name": "classUNO",
+  "description": "Real-time multiplayer UNO card game with live voice chat, custom rooms, interactive table, and instant sync.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
